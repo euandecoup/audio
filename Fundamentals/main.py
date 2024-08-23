@@ -11,7 +11,7 @@ class VoiceRecorder:
         self.root = tk.Tk()
         self.root.title("Voice Recorder")
         self.root.resizable(False, False)
-        self.button = tk.Button(text="🎤", font=("Arial", 120, "bold"), command=self.click_handler)
+        self.button = tk.Button(text="🎤", font=("Arial", 12, "bold"), command=self.click_handler, bg="white", fg="black", activebackground="lightgray", activeforeground="red", borderwidth=2, relief="raised")
         self.button.pack()
         self.label = tk.Label(text="00:00:00")
         self.label.pack()
